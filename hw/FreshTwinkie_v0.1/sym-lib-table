@@ -21,4 +21,5 @@
   (lib (name pkl_linear)(type Legacy)(uri ${KIPRJMOD}/../../lib/pkl/pkl_linear.lib)(options "")(descr ""))
   (lib (name pkl_device)(type Legacy)(uri ${KIPRJMOD}/../../lib/pkl/pkl_device.lib)(options "")(descr ""))
   (lib (name pkl_conn)(type Legacy)(uri ${KIPRJMOD}/../../lib/pkl/pkl_conn.lib)(options "")(descr ""))
+  (lib (name FreshTwinkie-rescue)(type Legacy)(uri ${KIPRJMOD}/FreshTwinkie-rescue.lib)(options "")(descr ""))
 )

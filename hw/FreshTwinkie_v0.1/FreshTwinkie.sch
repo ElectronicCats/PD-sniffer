@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:FreshTwinkie-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_C_Plug P1
+L FreshTwinkie-rescue:USB_C_Plug-Connector P1
 U 1 1 5C99C9A0
 P 2100 8050
 F 0 "P1" H 1750 9350 50  0000 C CNN
@@ -98,7 +97,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 9350 4150 9350
 $Comp
-L Connector:USB_C_Receptacle J2
+L FreshTwinkie-rescue:USB_C_Receptacle-Connector J2
 U 1 1 5C99EB45
 P 4750 8050
 F 0 "J2" H 5050 9350 50  0000 R CNN
@@ -667,7 +666,7 @@ U 1 1 5CA258F0
 P 13650 4500
 F 0 "U5" H 13950 6050 50  0000 C CNN
 F 1 "STM32F072CBUx" H 14200 5950 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 13050 3100 50  0001 R CNN
+F 2 "QFN50P700X700X60-49N(1):QFN50P700X700X60-49N" H 13050 3100 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 13650 4500 50  0001 C CNN
 F 4 "STMicroelectronics" H 13650 4500 50  0001 C CNN "Mfg"
 F 5 "STM32F072CBU6" H 13650 4500 50  0001 C CNN "PN"
@@ -1117,7 +1116,7 @@ ADDR: 0X41\n
 Text Notes 4800 3800 0    50   ~ 0
 ADDR: 0X40
 $Comp
-L Connector:USB_B_Micro J1
+L FreshTwinkie-rescue:USB_B_Micro-Connector J1
 U 1 1 5CAB9DC5
 P 2200 2250
 F 0 "J1" H 2257 2717 50  0000 C CNN

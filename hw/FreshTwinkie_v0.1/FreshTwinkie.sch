@@ -572,9 +572,9 @@ TX_CLKIN
 Text Label 14450 4600 0    50   ~ 0
 CC2_TX_DATA
 Text Label 14450 4700 0    50   ~ 0
-CC2_ALERT_L
+VCONN_ALERT_L
 Text Label 14450 4800 0    50   ~ 0
-CC1_RA
+CC2_RA
 Text Label 14450 4900 0    50   ~ 0
 UART_TX
 Text Label 14450 5000 0    50   ~ 0
@@ -584,15 +584,11 @@ USB_B_D_N
 Text Label 14450 5200 0    50   ~ 0
 USB_B_D_P
 Text Label 14450 5300 0    50   ~ 0
-CC1_RPUSB
-Text Label 14450 5400 0    50   ~ 0
-CC1_RP1A5
+CC1_TX_EN
 Text Label 14450 5500 0    50   ~ 0
 CC1_RP3A0
 Wire Wire Line
 	13000 4000 12850 4000
-Text Label 12850 4000 2    50   ~ 0
-CC2_RPUSB
 Wire Wire Line
 	13000 4100 12850 4100
 Wire Wire Line
@@ -619,36 +615,32 @@ Wire Wire Line
 	13000 5400 12850 5400
 Wire Wire Line
 	13000 5500 12850 5500
-Text Label 12850 4100 2    50   ~ 0
-CC1_TX_EN
 Text Label 12850 4200 2    50   ~ 0
 VBUS_ALERT_L
 Text Label 12850 4300 2    50   ~ 0
-CC2_TX_EN
+CC1_RD
 Text Label 12850 4400 2    50   ~ 0
 CC1_TX_DATA
 Text Label 12850 4500 2    50   ~ 0
-CC1_RD
+CC1_RP1A5
 Text Label 12850 4800 2    50   ~ 0
-CC2_RD
+CC1_RA
 Text Label 12850 4900 2    50   ~ 0
 TX_CLKOUT
 Text Label 12850 5100 2    50   ~ 0
-LED_G_L
-Text Label 12850 5300 2    50   ~ 0
 LED_R_L
+Text Label 12850 5300 2    50   ~ 0
+CC2_RD
 Text Label 12850 5400 2    50   ~ 0
 LED_B_L
 Text Label 12850 5500 2    50   ~ 0
-CC2_RA
+CC2_RP1A5
 Wire Wire Line
 	13000 3700 12850 3700
 Text Label 12850 3700 2    50   ~ 0
-CC2_RP1A5
+CC1_RP3A0
 Wire Wire Line
 	13000 3800 12850 3800
-Text Label 12850 3800 2    50   ~ 0
-CC2_RP3A0
 Text Label 12850 3300 2    50   ~ 0
 OSC_IN
 Text Label 12850 3400 2    50   ~ 0
@@ -659,21 +651,6 @@ Wire Wire Line
 	13000 3100 12850 3100
 Text Label 12850 3100 2    50   ~ 0
 BOOT
-Text Label 15000 4500 0    50   ~ 0
-TX_CLKOUT
-$Comp
-L Device:Net-Tie_2 NT1
-U 1 1 5CA6F424
-P 14900 4500
-F 0 "NT1" H 14900 4589 50  0001 C CNN
-F 1 "Net-Tie_2" H 14900 4590 50  0001 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 14900 4500 50  0001 C CNN
-F 3 "~" H 14900 4500 50  0001 C CNN
-	1    14900 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14300 4500 14800 4500
 $Comp
 L Device:C C7
 U 1 1 5CBE8E04
@@ -831,9 +808,7 @@ Wire Wire Line
 	12400 3300 13000 3300
 Wire Wire Line
 	12400 3400 13000 3400
-NoConn ~ 13000 3600
-NoConn ~ 13000 5000
-NoConn ~ 13000 5200
+NoConn ~ 12850 3800
 Text Notes 12250 950  0    197  ~ 0
 Micro STM32F072CBU\n
 Wire Notes Line
@@ -1931,4 +1906,23 @@ Wire Wire Line
 	4650 8550 4650 8450
 Text Notes 6050 7400 2    197  ~ 0
 Micro-B y regulador de voltaje\n\n
+Wire Wire Line
+	14300 4500 14450 4500
+NoConn ~ 14450 4400
+Text Label 14450 5400 0    50   ~ 0
+CC1_RPUSB
+Text Label 12850 5200 2    50   ~ 0
+CC2_RPUSB
+Wire Wire Line
+	12850 5200 13000 5200
+Text Label 12850 5000 2    50   ~ 0
+LED_G_L
+Wire Wire Line
+	12850 5000 13000 5000
+NoConn ~ 12850 4100
+NoConn ~ 12850 4000
+Text Label 12850 3600 2    50   ~ 0
+CC2_TX_EN
+Wire Wire Line
+	12850 3600 13000 3600
 $EndSCHEMATC

@@ -897,7 +897,7 @@ Wire Wire Line
 Connection ~ 14700 9350
 Wire Wire Line
 	14700 9350 14750 9350
-Text Notes 13000 7150 0    79   ~ 0
+Text Notes 12950 7100 0    79   ~ 0
 Para entrar en el modo boot, \nconectar un cable A-to-A en un adaptador OGT \no usar un cable Micro-B y mientrás se inserta, \npresionar el SW1.
 Text Label 13800 8500 2    50   ~ 0
 USB_B_ID
@@ -1874,12 +1874,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR015
 U 1 1 6262473C
-P 5250 7800
-F 0 "#PWR015" H 5250 7650 50  0001 C CNN
-F 1 "+3.3V" H 5265 7973 50  0000 C CNN
-F 2 "" H 5250 7800 50  0001 C CNN
-F 3 "" H 5250 7800 50  0001 C CNN
-	1    5250 7800
+P 5250 7850
+F 0 "#PWR015" H 5250 7700 50  0001 C CNN
+F 1 "+3.3V" H 5265 8023 50  0000 C CNN
+F 2 "" H 5250 7850 50  0001 C CNN
+F 3 "" H 5250 7850 50  0001 C CNN
+	1    5250 7850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1931,7 +1931,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 8050 5250 8050
 Wire Wire Line
-	5250 8050 5250 7800
+	5250 8050 5250 7850
 $Comp
 L power:GND #PWR018
 U 1 1 627318D4

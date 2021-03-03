@@ -1,4 +1,4 @@
-19398730356189671
+19400345301592242
 Aesthetics
 3v3
 
@@ -419,6 +419,13 @@ wurth_4x4
 0
 0
 0
+BGA12N40P3X4_119X159X62N
+BGA12N40P3X4_119X159X62N
+
+
+0
+12
+12
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51434,8 +51441,8 @@ XUNPU_24PIN_USBC_RECEPT
 
 
 0
-9
-2
+32
+25
 Fuse
 Fuse_0402_1005Metric
 Fuse SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator

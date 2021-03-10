@@ -1159,10 +1159,6 @@ F 3 "" H 7500 10750 50  0001 C CNN
 	1    7500 10750
 	1    0    0    -1  
 $EndComp
-Text Label 7300 5950 2    50   ~ 0
-VBUS_ALERT_L
-Text Label 7300 5750 2    50   ~ 0
-SDA
 Wire Notes Line
 	8000 500  8000 3450
 Text Notes 9750 4600 2    197  ~ 0
@@ -1737,59 +1733,6 @@ F 6 "Mouser" H 9300 7600 50  0001 C CNN "Tienda"
 	1    9300 7600
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR024
-U 1 1 604F7F22
-P 7600 6650
-F 0 "#PWR024" H 7600 6400 50  0001 C CNN
-F 1 "GND" H 7605 6477 50  0000 C CNN
-F 2 "" H 7600 6650 50  0001 C CNN
-F 3 "" H 7600 6650 50  0001 C CNN
-	1    7600 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 6050FCBB
-P 10100 6800
-F 0 "#PWR026" H 10100 6550 50  0001 C CNN
-F 1 "GND" H 10105 6627 50  0000 C CNN
-F 2 "" H 10100 6800 50  0001 C CNN
-F 3 "" H 10100 6800 50  0001 C CNN
-	1    10100 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR021
-U 1 1 605F6E31
-P 8000 5200
-F 0 "#PWR021" H 8000 5050 50  0001 C CNN
-F 1 "+3.3V" H 8015 5373 50  0000 C CNN
-F 2 "" H 8000 5200 50  0001 C CNN
-F 3 "" H 8000 5200 50  0001 C CNN
-	1    8000 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR022
-U 1 1 60656CD3
-P 10850 5400
-F 0 "#PWR022" H 10850 5250 50  0001 C CNN
-F 1 "+3.3V" H 10865 5573 50  0000 C CNN
-F 2 "" H 10850 5400 50  0001 C CNN
-F 3 "" H 10850 5400 50  0001 C CNN
-	1    10850 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10850 5400 10850 5450
-Wire Wire Line
-	10850 6250 10600 6250
-Wire Wire Line
-	10100 5450 10850 5450
-Connection ~ 10850 5450
-Wire Wire Line
-	10850 5450 10850 6250
 Wire Wire Line
 	7350 10650 7350 10700
 Wire Wire Line
@@ -1801,12 +1744,6 @@ Wire Wire Line
 Connection ~ 7500 10700
 Wire Wire Line
 	7500 10700 7650 10700
-Wire Wire Line
-	9450 5950 9600 5950
-Wire Wire Line
-	9600 5750 9450 5750
-Wire Wire Line
-	9450 5750 9450 5950
 Wire Wire Line
 	8250 8050 8450 8050
 Wire Wire Line
@@ -1825,14 +1762,6 @@ Wire Wire Line
 	10050 8350 9400 8350
 Wire Wire Line
 	9400 8350 9400 7750
-Text Label 7300 5650 2    50   ~ 0
-SCL
-Wire Wire Line
-	8000 5350 8000 5200
-Wire Wire Line
-	7300 5750 7500 5750
-Wire Wire Line
-	7300 5650 7500 5650
 Wire Notes Line
 	5750 11200 6050 11200
 Wire Notes Line
@@ -1847,107 +1776,12 @@ Wire Notes Line
 	6050 6350 500  6350
 Wire Notes Line
 	500  6350 500  6300
-Wire Wire Line
-	7300 5950 7500 5950
-$Comp
-L gkl_sensor:INA231 U4
-U 1 1 604C232E
-P 8000 5900
-F 0 "U4" H 7750 6450 50  0000 C CNN
-F 1 "INA231" H 7750 6350 50  0000 C CNN
-F 2 "BGA12N40P3X4_119X159X62N:BGA12N40P3X4_119X159X62N" H 8000 6600 50  0001 C CNN
-F 3 "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fina231" H 8000 6600 50  0001 C CNN
-F 4 "Texas Instruments" H 8000 5900 50  0001 C CNN "Mfg"
-F 5 "595-INA231AIYFFR" H 8000 5900 50  0001 C CNN "PN"
-F 6 "Mouser" H 8000 5900 50  0001 C CNN "Tienda"
-	1    8000 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8000 6550 7600 6550
-Wire Wire Line
-	7600 6550 7600 6650
-Wire Wire Line
-	7500 6150 7350 6150
-Wire Wire Line
-	7350 6150 7350 6250
-Wire Wire Line
-	7350 6250 7500 6250
-Wire Wire Line
-	7350 6250 7350 6550
-Wire Wire Line
-	7350 6550 7600 6550
-Connection ~ 7350 6250
-Connection ~ 7600 6550
-NoConn ~ 8500 6250
-NoConn ~ 8500 6150
-Wire Wire Line
-	8350 7650 8350 6450
-Wire Wire Line
-	8350 6450 8650 6450
-Wire Wire Line
-	8650 6450 8650 5850
-Wire Wire Line
-	8650 5850 8500 5850
-Wire Wire Line
-	8500 5650 8650 5650
-Wire Wire Line
-	8650 5650 8650 5850
-Connection ~ 8650 5850
-Wire Wire Line
-	8750 7650 8750 5950
-Wire Wire Line
-	8750 5950 8500 5950
-$Comp
-L gkl_sensor:INA231 U5
-U 1 1 604C3169
-P 10100 6000
-F 0 "U5" H 10100 6731 50  0000 C CNN
-F 1 "INA231" H 10100 6640 50  0000 C CNN
-F 2 "BGA12N40P3X4_119X159X62N:BGA12N40P3X4_119X159X62N" H 10100 6700 50  0001 C CNN
-F 3 "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fina231" H 10100 6700 50  0001 C CNN
-F 4 "Texas Instruments" H 10100 6000 50  0001 C CNN "Mfg"
-F 5 "595-INA231AIYFFR" H 10100 6000 50  0001 C CNN "PN"
-F 6 "Mouser" H 10100 6000 50  0001 C CNN "Tienda"
-	1    10100 6000
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 7600 9050 5950
-Wire Wire Line
-	9050 5950 9450 5950
-Connection ~ 9450 5950
-Wire Wire Line
-	9500 7600 9500 6050
-Wire Wire Line
-	9500 6050 9600 6050
-Wire Wire Line
-	10100 6800 10100 6750
-Wire Wire Line
-	10600 6350 10600 6750
-Wire Wire Line
-	10600 6750 10100 6750
-Connection ~ 10100 6750
-Wire Wire Line
-	10100 6750 10100 6650
-Text Label 10950 5750 0    50   ~ 0
+Text Label 10700 5700 0    50   ~ 0
 SCL
-Text Label 10950 5850 0    50   ~ 0
+Text Label 10700 5600 0    50   ~ 0
 SDA
-Wire Wire Line
-	10600 5750 10950 5750
-Wire Wire Line
-	10600 5850 10950 5850
-Text Label 11100 6300 0    50   ~ 0
+Text Label 10650 5900 0    50   ~ 0
 CC2_ALERT_L
-Wire Wire Line
-	10600 6050 11000 6050
-Wire Wire Line
-	11000 6050 11000 6300
-Wire Wire Line
-	11000 6300 11100 6300
-NoConn ~ 9600 6250
-NoConn ~ 9600 6350
 Text Label 8350 7100 1    50   ~ 0
 USBC_VBUS_+
 Text Label 8750 7100 1    50   ~ 0
@@ -2060,4 +1894,158 @@ Wire Wire Line
 	3700 9900 3700 9700
 Wire Wire Line
 	3700 10200 3700 10350
+$Comp
+L Analog_ADC:INA226 U?
+U 1 1 606DC2B7
+P 7850 6250
+F 0 "U?" H 8100 6800 50  0000 C CNN
+F 1 "INA226" H 8100 6700 50  0000 C CNN
+F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 8650 5800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina226.pdf" H 8200 6150 50  0001 C CNN
+	1    7850 6250
+	-1   0    0    -1  
+$EndComp
+Text Label 7200 6550 2    50   ~ 0
+VBUS_ALERT_L
+Wire Wire Line
+	7200 6550 7450 6550
+Text Label 7250 6250 2    50   ~ 0
+SDA
+Wire Wire Line
+	7250 6250 7450 6250
+Text Label 7250 6350 2    50   ~ 0
+SCL
+Wire Wire Line
+	7250 6350 7450 6350
+Wire Wire Line
+	7450 5950 7350 5950
+Wire Wire Line
+	7350 5950 7350 6050
+Wire Wire Line
+	7350 6800 7550 6800
+Wire Wire Line
+	7850 6800 7850 6750
+Wire Wire Line
+	7450 6050 7350 6050
+Connection ~ 7350 6050
+Wire Wire Line
+	7350 6050 7350 6800
+$Comp
+L power:GND #PWR?
+U 1 1 6079C960
+P 7550 6900
+F 0 "#PWR?" H 7550 6650 50  0001 C CNN
+F 1 "GND" H 7555 6727 50  0000 C CNN
+F 2 "" H 7550 6900 50  0001 C CNN
+F 3 "" H 7550 6900 50  0001 C CNN
+	1    7550 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 6900 7550 6800
+Connection ~ 7550 6800
+Wire Wire Line
+	7550 6800 7850 6800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 607BE22F
+P 7850 5650
+F 0 "#PWR?" H 7850 5500 50  0001 C CNN
+F 1 "+3.3V" H 7865 5823 50  0000 C CNN
+F 2 "" H 7850 5650 50  0001 C CNN
+F 3 "" H 7850 5650 50  0001 C CNN
+	1    7850 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 5650 7850 5750
+Wire Wire Line
+	8250 5950 8400 5950
+Wire Wire Line
+	8400 5950 8400 6350
+Wire Wire Line
+	8400 6350 8350 6350
+Wire Wire Line
+	8350 6350 8350 7650
+Connection ~ 8350 6350
+Wire Wire Line
+	8350 6350 8250 6350
+Wire Wire Line
+	8750 6450 8250 6450
+Wire Wire Line
+	8750 6450 8750 7650
+$Comp
+L Analog_ADC:INA226 U?
+U 1 1 6099B7C9
+P 9950 5600
+F 0 "U?" H 10200 6150 50  0000 C CNN
+F 1 "INA226" H 10200 6050 50  0000 C CNN
+F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 10750 5150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina226.pdf" H 10300 5500 50  0001 C CNN
+	1    9950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609F9D36
+P 9950 6300
+F 0 "#PWR?" H 9950 6050 50  0001 C CNN
+F 1 "GND" H 9955 6127 50  0000 C CNN
+F 2 "" H 9950 6300 50  0001 C CNN
+F 3 "" H 9950 6300 50  0001 C CNN
+	1    9950 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 6300 9950 6200
+Wire Wire Line
+	10350 5300 10600 5300
+Wire Wire Line
+	10600 5300 10600 6200
+Wire Wire Line
+	10600 6200 9950 6200
+Connection ~ 9950 6200
+Wire Wire Line
+	9950 6200 9950 6100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60A3A1AF
+P 9950 5000
+F 0 "#PWR?" H 9950 4850 50  0001 C CNN
+F 1 "+3.3V" H 9965 5173 50  0000 C CNN
+F 2 "" H 9950 5000 50  0001 C CNN
+F 3 "" H 9950 5000 50  0001 C CNN
+	1    9950 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 5000 9950 5050
+Wire Wire Line
+	10350 5400 10450 5400
+Wire Wire Line
+	10450 5400 10450 5050
+Wire Wire Line
+	10450 5050 9950 5050
+Connection ~ 9950 5050
+Wire Wire Line
+	9950 5050 9950 5100
+Wire Wire Line
+	10700 5600 10350 5600
+Wire Wire Line
+	10700 5700 10350 5700
+Wire Wire Line
+	10650 5900 10350 5900
+Wire Wire Line
+	9500 5800 9550 5800
+Wire Wire Line
+	9500 5800 9500 7600
+Wire Wire Line
+	9050 5300 9550 5300
+Wire Wire Line
+	9050 5300 9050 5700
+Wire Wire Line
+	9550 5700 9050 5700
+Connection ~ 9050 5700
+Wire Wire Line
+	9050 5700 9050 7600
 $EndSCHEMATC

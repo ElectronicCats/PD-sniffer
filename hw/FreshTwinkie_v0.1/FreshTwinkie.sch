@@ -4,10 +4,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "ClockClock Module"
-Date "2019-03-23"
+Title "USBC-PDSniffer"
+Date "2021-03-16"
 Rev "r0_1"
-Comp "GsD"
+Comp "Electronic Cats"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -843,16 +843,14 @@ Wire Wire Line
 Connection ~ 14700 9350
 Wire Wire Line
 	14700 9350 14750 9350
-Text Notes 12850 6850 0    63   ~ 0
-To enter in bootmode, plug in A-to-A cable trought \nOGT adaptador. Or use an micro-B while plug in, push SW1. \n
+Text Notes 11950 6850 0    79   ~ 0
+To enter in bootmode, plug in A-to-A cable trought \nOGT adaptador. Or use a micro-B cable, while plug in push SW1. \n
 Text Label 13800 8500 2    50   ~ 0
 USB_B_ID
 Wire Wire Line
 	13800 8500 14150 8500
 Wire Notes Line
-	12800 6200 12800 9900
-Wire Notes Line
-	12800 9900 16050 9900
+	11900 6250 11900 9950
 $Comp
 L power:+3.3V #PWR04
 U 1 1 609D2E10

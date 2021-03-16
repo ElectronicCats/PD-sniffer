@@ -187,7 +187,7 @@ $EndComp
 Text Label 15000 8200 0    50   ~ 0
 BOOT
 Text Notes 15500 6550 2    197  ~ 0
-Modo Bootloader\n
+Bootloader Mode\n
 Text Label 5650 2250 0    50   ~ 0
 CC1_BUF
 $Comp
@@ -843,16 +843,14 @@ Wire Wire Line
 Connection ~ 14700 9350
 Wire Wire Line
 	14700 9350 14750 9350
-Text Notes 12950 7100 0    79   ~ 0
-Para entrar en el modo boot, \nconectar un cable A-to-A en un adaptador OGT \no usar un cable Micro-B y mientrás se inserta, \npresionar el SW1.
+Text Notes 11950 6850 0    79   ~ 0
+To enter in bootmode, plug in A-to-A cable trought \nOGT adaptador. Or use a micro-B cable, while plug in push SW1. \n
 Text Label 13800 8500 2    50   ~ 0
 USB_B_ID
 Wire Wire Line
 	13800 8500 14150 8500
 Wire Notes Line
-	12800 6200 12800 9900
-Wire Notes Line
-	12800 9900 16050 9900
+	11900 6250 11900 9950
 $Comp
 L power:+3.3V #PWR04
 U 1 1 609D2E10
@@ -867,7 +865,7 @@ $EndComp
 Wire Wire Line
 	8800 1500 8800 2000
 Text Notes 8300 1300 0    197  ~ 0
-Leds indicadores\n\n
+Leds \n\n\n
 Wire Notes Line
 	8000 3450 11200 3450
 Text Label 2400 8450 0    50   ~ 0
@@ -1585,7 +1583,7 @@ $EndComp
 Wire Wire Line
 	4650 8550 4650 8450
 Text Notes 5650 7450 2    197  ~ 0
-Micro-B y regulador de voltaje\n\n
+Micro-B y voltage regulator
 Text Label 14450 5300 0    50   ~ 0
 CC1_RPUSB
 Text Label 12850 4000 2    50   ~ 0
